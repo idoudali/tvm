@@ -100,6 +100,7 @@ def test_compile_runtime():
 @tvm.testing.requires_micro
 def test_compile_runtime_llvm():
     """Test targeting the on-device runtime with the llvm backend."""
+    assert False, "Injecting expected failure"
     global TARGET
     old_target = TARGET
     try:

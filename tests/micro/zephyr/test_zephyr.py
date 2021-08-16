@@ -86,6 +86,7 @@ def _make_session(temp_dir, zephyr_board, west_cmd, mod, build_config):
     )
     project.build()
     project.flash()
+    assert False, "Injecting expected failure, hope to see stdout :)"
     return tvm.micro.Session(project.transport())
 
 
